@@ -13,3 +13,14 @@ export type GameListItem = {
   adsCount: number;
   _count: { ads: number };
 };
+
+export type CreateAdPayload = {
+  gameId: string;
+  discord: string;
+  name: string;
+  yearsPlaying: number;
+  weekDays: number[];
+  hourEnd: string;
+  hourStart: string;
+  useVoiceChannel: boolean;
+};
